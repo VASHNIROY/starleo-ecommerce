@@ -1,0 +1,22 @@
+.recently-viewed-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.recently-viewed-mini-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 82%;
+}
+
+.recently-viewed-cards-container {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

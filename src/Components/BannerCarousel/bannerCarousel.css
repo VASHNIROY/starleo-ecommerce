@@ -1,0 +1,27 @@
+.carousel .carousel .carousel .control-dots .dot.selected,
+.carousel .carousel .carousel .control-dots .dot:hover {
+  background-color: lightblue;
+}
+
+.study-abroad-carousel-main-container {
+  padding: 2% 5%;
+  width: 90%;
+}
+.study-abroad-carousel-slide {
+  position: relative;
+  width: 100% !important;
+  height: 400px !important;
+}
+.slider {
+  height: max-content !important;
+  width: 100% !important;
+}
+
+.study-abroad-carousel-slide .study-abroad-carousel-image {
+  max-width: 100%;
+}
+
+.sliderrrr {
+  height: 100% !important;
+  width: 100% !important;
+}
