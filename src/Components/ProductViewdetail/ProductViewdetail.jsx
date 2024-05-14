@@ -643,7 +643,10 @@ const ProductViewdetail = () => {
                 )}
               </div>
               <div className="product-view-detail-related-products-container">
-                <h3 className="product-view-detail-heading">
+                <h3
+                  className="product-view-detail-heading"
+                  style={{ marginTop: "70px" }}
+                >
                   Similar Products
                 </h3>
                 <div className="feature-curosal-arrow-button">
@@ -674,7 +677,7 @@ const ProductViewdetail = () => {
             </div>
           </div>
 
-          <div className="product-view-detail-right-side-container">
+          {/* <div className="product-view-detail-right-side-container">
             <div className="product-view-detail-banner-first-container">
               <Slider {...settings}>
                 {bannerImages.map((item) => (
@@ -743,7 +746,7 @@ const ProductViewdetail = () => {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       )}
     </div>

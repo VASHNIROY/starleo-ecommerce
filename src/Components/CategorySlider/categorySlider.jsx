@@ -105,14 +105,16 @@ function CategorySlider() {
       ? dashboardData.data.filter((each) => each.type === "category_list")
       : [];
 
-  console.log("categoryList", categoryList);
   return (
     <>
       {" "}
       {isLoading ? (
         <Loader size={20} />
       ) : (
-        <div className="slider-main-container">
+        <div
+          className="slider-main-container"
+          style={{ display: "flex", flexDirection: "column" }}
+        >
           <div className="slider-container-2">
             <Slider {...settings}>
               {categoryList[0].data.map((slide) => {

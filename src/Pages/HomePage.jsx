@@ -39,8 +39,18 @@ const HomePage = () => {
         <>
           <BannerCarousel />
           <FeaturedProducts />
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100%",
+            }}
+          >
+            <h1 className="medicine-curosal-main-heading">Categories</h1>
+          </div>
           <CategorySlider />
-          <NewSeltterBanner />
           <OfferCards />
 
           <Layout
@@ -51,7 +61,6 @@ const HomePage = () => {
             <SponsoredProducts />
             <RecentlyViewedProducts />
           </Layout>
-          <AdvertBanner />
         </>
       )}
     </>

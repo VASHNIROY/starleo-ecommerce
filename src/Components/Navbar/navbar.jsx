@@ -59,7 +59,7 @@ const Navbar = () => {
 
   const emptySearch = () => {
     setSearchValue("");
-    console.log("empty searcj called ");
+    console.log("empty search called ");
   };
 
   return (
@@ -164,8 +164,8 @@ const Navbar = () => {
                   <img src={logo} className="navbar-logo" />
                 </Link>
                 <div className="navbar-logo-content-container">
-                  <p style={{ margin: 0 }}>Bachat Guruu</p>
-                  <p style={{ margin: 0 }}>ISSE SASTA AUR KAHAN</p>
+                  <p style={{ margin: 0 }}>Star Leoo</p>
+                  <p style={{ margin: 0 }}>Lets Enjoy Online Offers</p>
                 </div>
               </div>
               <div className="search-bar-container">
@@ -183,14 +183,18 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="contact-details-container">
-                <div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   <MdWifiCalling3 className="navbar-contact-icon" />
                 </div>
                 <div>
-                  <p className="navbar-contact-details-para">
-                    Sales & Service Support
-                  </p>
-                  <p className="navbar-contact-details-para">123-456789</p>
+                  <p className="navbar-contact-details-para">Service Support</p>
+                  <p className="navbar-contact-details-para">8688266929</p>
                 </div>
               </div>
             </div>

@@ -9,12 +9,13 @@ import { CiMail } from "react-icons/ci";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import logo from "../../Utils/logo.png";
+import { MdWifiCalling3 } from "react-icons/md";
 
 const Footer = () => {
   const isMobileScreen = useMediaQuery("(max-width: 1250px)");
   const navigate = useNavigate();
   return (
-    <div className="footer-master-container mt-5">
+    <div className="footer-master-container mt-5 pb-5">
       <div
         className={`${
           isMobileScreen ? "mbl-footer-main-contaier" : "footer-main-contaier"
@@ -30,20 +31,62 @@ const Footer = () => {
                 <img src={logo} className="navbar-logo" />
               </Link>
               <div className="navbar-logo-content-container">
-                <p style={{ margin: 0 }}>Bachat Guruu</p>
-                <p style={{ margin: 0 }}>ISSE SASTA AUR KAHAN</p>
+                <h6
+                  style={{
+                    margin: 0,
+                    fontWeight: "bold",
+                    marginTop: "6%",
+                  }}
+                >
+                  BACHAT GURUU
+                </h6>
+
+                <p style={{ margin: 0 }}>Isse Sasta Aur Kahan</p>
               </div>
             </div>
             <div className="">
-              <p>70 Washington Square South,</p>
-              <p>New York, NY 10012, United States</p>
+              <p
+                style={{
+                  fontSize: "12px",
+                }}
+              >
+                Star leoo is a platform where every individual can visit and
+                grab the most convenient deals for Customised gifts, Electronics
+                and much more. And we allow vendors to onboard their products at
+                our platform.
+              </p>
             </div>
             <div className="footer-social-icons-container">
-              <FaFacebookF />
-              <FaInstagram />
-              <FaXTwitter />
-              <FaLinkedin />
-              <FaYoutube />
+              <Link
+                to={"https://www.facebook.com/profile.php?id=61559051203541"}
+                target="_blank"
+              >
+                {" "}
+                <FaFacebookF />
+              </Link>
+              <Link
+                to={"https://www.instagram.com/starleoo2024/"}
+                target="_blank"
+              >
+                <FaInstagram />
+              </Link>
+              <Link to={"https://twitter.com/starleoo786"} target="_blank">
+                <FaXTwitter />
+              </Link>
+              <Link
+                to={"https://www.linkedin.com/in/star-leoo-751ab8303/"}
+                target="_blank"
+              >
+                <FaLinkedin />
+              </Link>
+              <Link
+                to={
+                  "https://youtube.com/@StarLeoo.LetsEnjoyOnlineOffers?si=WGiMksln3oB4IMmG"
+                }
+                target="_blank"
+              >
+                <FaYoutube />
+              </Link>
             </div>
           </div>
           <hr className="footer-hr-line" />
@@ -51,23 +94,35 @@ const Footer = () => {
             <div className="footer-vertical-line"></div>
 
             <div className="footer-help-container">
-              <p className="footer-side-headings">Need help</p>
-              <h5
-                className="footer-side-headings"
-                style={{
-                  fontWeight: "bold",
-                  marginTop: "6%",
-                  marginBottom: "10%",
-                }}
-              >
-                9876 788 - HGGGY -888
-              </h5>
-              <span>Monday - Friday: 9:00 - 20:00</span>
-              <p>Saturday: 9:00 - 15:00</p>
+              <p className="footer-side-headings">Address</p>
+              <p style={{ marginBottom: 0 }}>17-6-732, Dabeerpura,</p>
+              <p style={{ marginBottom: 0 }}>Hyderabad, Telangana,</p>
+              <p style={{ marginBottom: 0 }}>India - 500023.</p>
+
+              <div className="contact-details-container">
+                <div>
+                  <MdWifiCalling3 />
+                </div>
+                <h5
+                  className="footer-side-headings"
+                  style={{
+                    fontWeight: "bold",
+                    marginTop: "6%",
+                  }}
+                >
+                  8688266929
+                </h5>
+              </div>
+
+              {/* <span>Monday - Friday: 9:00 - 20:00</span>
+              <p>Saturday: 9:00 - 15:00</p> */}
               <div className="footer-mail-contianer">
                 <CiMail />
-                <p style={{ margin: 0, marginLeft: "10px" }}>
-                  inbox@ecommerce.com
+                <p
+                  style={{ margin: 0, marginLeft: "10px" }}
+                  className="footer-side-headings"
+                >
+                  mohdshanawaz152@gmail.com
                 </p>
               </div>
             </div>
@@ -80,7 +135,7 @@ const Footer = () => {
             <ul className="footer-info-acc-ul-container">
               <li
                 className="footer-route-link"
-                onClick={() => navigate("/about-us")}
+                // onClick={() => navigate("/about-us")}
               >
                 About Us
               </li>

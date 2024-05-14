@@ -219,9 +219,9 @@ function AboutUs() {
         </div>
       </div>
       <div className="client-reviews-follow-instagram-container">
-        <h1 className="client-reviews-follow-heading">
+         <h1 className="client-reviews-follow-heading">
           Follow us in instagram @propharm
-        </h1>
+        </h1> 
         <div className="client-reviews-follow-img-container">
           {followUsImages.map((each) => (
             <img
@@ -233,7 +233,6 @@ function AboutUs() {
           ))}
         </div>
       </div>
-      <NewsSeltterBanner />
     </div>
   );
 }
